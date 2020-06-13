@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт лагеря "Мечта"</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <span>Лагерь "Мечта"</span>
+    </div>
+    <div id="about">
+        <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+        <a href="#" title="Фотоальбом" onclick="slowScroll('#overview')">Фотоальбом</a>
+        <a href="#" title="Заказ путёвок" onclick="slowScroll('#contacts')">Заказ путёвок</a>
+        <a href="#" title="Ответы на вопросы" onclick="slowScroll('#faq')">FAQ</a>
+    </div>
+</header>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function slowScroll(id) {
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 500);
+    }
+
+    $(document).on("scroll", function (){
+        if($(window).scrollTop() === 0)/* Если положение скролла сверху */
+            $("header").removeClass("fixed");
+        else /* Если проскроллили */
+            $("header").attr("class", "fixed");
+    });
+</script>
+</body>
+</html>
