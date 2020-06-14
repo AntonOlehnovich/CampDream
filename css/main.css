@@ -42,6 +42,25 @@ header #logo span{
     font-family: 'Chilanka', serif;
 }
 
+/* Стили для анимированного перехода по ссылкам  */
+header #about a {
+    position: relative;
+    margin: 0 20px;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+header  #marker {
+    position: absolute;
+    height: 4px;
+    width: 0;
+    background: chartreuse;
+    bottom: 12px;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
 /* Ширина для лого  */
 @media (min-width: 701px){ /* Если сайт по ширине больше, чем 701px  */
     #logo{
