@@ -10,12 +10,12 @@
 /* Стили для body и html  */
 body, html{
     width: 100%;
-    height: 1000px;
+    height: 100%;
 }
 
 /* Персонализированные стили для body  */
 body{
-    background-color: #000; /* Цвет заднего фона  */
+    background-color: #fafafa; /* Цвет заднего фона  */
     font-family: "Trebuchet MS", Helvetica, Mistral; /* Шрифты по умолчанию  */
 }
 
@@ -106,3 +106,42 @@ header.fixed #logo {
 
 .fixed #about a {color: #343434}
 .fixed #about a:hover {color: #7c7c7c}
+
+/* Стиль для блока приветствия */
+#top{
+    width: 100%;
+    height: 1000px;
+    background-image: url("https://pulse19.ru/wp-content/uploads/2019/08/download-campfire-wallpaper-for-3d11.jpg");
+    background-blend-mode: multiply; /* Можно наложить несколько цветов на один блок */
+    background-color: gold;
+    background-size: cover; /* Растянуть изображение на всю ширину блока */
+    text-align: center;
+    color: #fff;
+}
+
+@media (min-width: 1001px) {
+    #top{
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 651px){
+    #top{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 650px) {
+    #top{
+        font-size: 1.3em;
+        padding-top: 50%;
+    }
+}
+
+#top h1{
+    padding-top: 20%; /* Устанавливает расстояние  между верхним внутренним краем рамки элемента и его содержимым  */
+}
+
+#top h1{
+    color: #ccc;
+}
