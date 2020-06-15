@@ -168,7 +168,7 @@ header.fixed #logo {
 /* Блок с возможностями */
 #main{
     float: left;
-    background-image: url("https://lh3.googleusercontent.com/proxy/4wnOgEglSoWvu9_dTJ5Qi4Uk1j-wdvdrFNP0LQwc1nRj_SFaiaUi5fDKOdKNHoqMfEQmXbNRSvxCwi1t6ITq8YIvNWO6h38gFRgw9cVFQj3ad2EIC23gFpFI9cPKC0Tt");
+    background-image: url("https://lh3.googleusercontent.com/proxy/vvrDUp3S7m_6HC0C6iPzdZERmttwy3WuHt_IZuOvYt5V7fuq1jPsA6xTBnvuF3etSJMj0Mh4jXo5rhpPCnXUliu8wjaCIaiUSQbzhx-J4MZYqGKwLdIbpzDZRTjcFunn");
     background-blend-mode: multiply; /* Можно наложить несколько цветов на один блок */
     background-color: indigo;
     background-size: cover; /* Растянуть изображение на всю ширину блока */
