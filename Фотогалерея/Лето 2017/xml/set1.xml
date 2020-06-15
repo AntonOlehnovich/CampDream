@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<bank>
+    <img>
+        <src>photos/1.jpg</src>
+        <title>Картинка 1</title>
+        <caption>Смена #1</caption>
+    </img>
+    <img>
+        <src>photos/2.jpg</src>
+        <title>Картинка 2</title>
+        <caption>Смена #1</caption>
+    </img>
+    <img>
+        <src>photos/3.jpg</src>
+        <title>Картинка 3</title>
+        <caption>Смена #1</caption>
+    </img>
+    <img>
+        <src>photos/4.jpg</src>
+        <title>Картинка 4</title>
+        <caption>Смена #1</caption>
+    </img>
+</bank>
