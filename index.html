@@ -73,7 +73,61 @@
     </div>
 </div>
 
+<div class="container" id="contacts">
+    <form id="form_input">
+        <h2>Заказ путёвки</h2>
+        <div class="row100">
+            <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="fname" id="fname" required="required">
+                    <span class="text">Имя</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="lname" id="lname" required="required">
+                    <span class="text">Фамилия</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row100">
+            <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" required="required">
+                    <span class="text">Электронная почта</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="mob" id="mob" required="required">
+                    <span class="text">Мобильный телефон</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row100">
+            <div class="col">
+                <div class="inputBox textarea">
+                    <textarea required="required" name="message" id="message"></textarea>
+                    <span class="text">Введите ваше сообщение...</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row100">
+            <div class="col">
+                <input type="submit" value="Отправить" id="sendMail">
+            </div>
+        </div>
+    </form>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/formMail.js"></script>
+
 <script>
     function slowScroll(id) {
         $('html, body').animate({

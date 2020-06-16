@@ -1,0 +1,93 @@
+.accordion {
+    background-color: #444;
+    margin: 15px auto;
+    padding: 5px;
+    position: relative;
+    width: 520px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) inset;
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) inset;
+}
+.accordion span {
+    display: none
+}
+.tabs {
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+.tabs dl {
+    float: left;
+    overflow: hidden;
+    width: 110px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.tabs dl dd {
+    overflow: hidden;
+    width: 300px;
+}
+.tabs dl dd a {
+    background-color: #C8CEFF;
+    border: 1px solid;
+    border-color:#ccc;border-bottom-color:#aaa;
+    display: block;
+    float: left;
+    font-size: 18px;
+    line-height: 126px;
+    padding: 0 20px;
+    text-decoration: none;
+
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffffff,EndColorStr=#ffe0e0e0);
+    background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);
+    background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);
+    background-image:-o-linear-gradient(top,#fff 0,#e0e0e0 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));
+    background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+    background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.tabs dl dd div {
+    float: left;
+    height: 128px;
+}
+.tabs dl dd div img {
+    height: 128px;
+    padding: 0 3px;
+}
+.tabs dl dd a:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) inset;
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) inset;
+}
+.tabs dl dd a:active {
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#e6e6e6,EndColorStr=#dcdcdc);
+    background-image: -moz-linear-gradient(top,#e6e6e6 0,#dcdcdc 100%);
+    background-image: -ms-linear-gradient(top,#e6e6e6 0,#dcdcdc 100%);
+    background-image: -o-linear-gradient(top,#e6e6e6 0,#dcdcdc 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#e6e6e6),color-stop(100%,#dcdcdc));
+    background-image: -webkit-linear-gradient(top,#e6e6e6 0,#dcdcdc 100%);
+    background-image: linear-gradient(to bottom,#e6e6e6 0,#dcdcdc 100%);
+}
+#tab1:target ~ .tabs .tab1, #tab2:target ~ .tabs .tab2, #tab3:target ~ .tabs .tab3 {
+    width: 300px;
+}
+#tab1:target ~ .tabs .tab1 dd a,
+#tab2:target ~ .tabs .tab2 dd a,
+#tab3:target ~ .tabs .tab3 dd a {
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#e6e6e6,EndColorStr=#dcdcdc);
+    background-image: -moz-linear-gradient(top,#e6e6e6 0,#dcdcdc 100%);
+    background-image: -ms-linear-gradient(top,#e6e6e6 0,#dcdcdc 100%);
+    background-image: -o-linear-gradient(top,#e6e6e6 0,#dcdcdc 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#e6e6e6),color-stop(100%,#dcdcdc));
+    background-image: -webkit-linear-gradient(top,#e6e6e6 0,#dcdcdc 100%);
+    background-image: linear-gradient(to bottom,#e6e6e6 0,#dcdcdc 100%);
+}
