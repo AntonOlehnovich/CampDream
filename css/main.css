@@ -168,7 +168,7 @@ header.fixed #logo {
 /* Блок с возможностями */
 #main{
     float: left;
-    background-image: url("https://lh3.googleusercontent.com/proxy/vvrDUp3S7m_6HC0C6iPzdZERmttwy3WuHt_IZuOvYt5V7fuq1jPsA6xTBnvuF3etSJMj0Mh4jXo5rhpPCnXUliu8wjaCIaiUSQbzhx-J4MZYqGKwLdIbpzDZRTjcFunn");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQNrtXxRgzz6Zafn0gP0F4VDH6wcH9KuPpRuVrveQQWxrbxFW1j&usqp=CAU");
     background-blend-mode: multiply; /* Можно наложить несколько цветов на один блок */
     background-color: indigo;
     background-size: cover; /* Растянуть изображение на всю ширину блока */
@@ -447,3 +447,50 @@ input:hover[type="submit"]
 {
     background: magenta;
 }
+
+#faq{
+    background-color: #fff;
+    border-top: 2px dashed #e4e3e3;
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+@media (min-width:801px){
+    #faq div{
+        width: 25%;
+        margin-left: 6%;
+        float: left;
+    }
+}
+
+@media (max-width:800px){
+    #faq div{
+        width: 80%;
+        margin-left: 10%;
+        float: left;
+    }
+}
+
+#faq .title{
+    font-weight: lighter;
+    color: #a3a0ad;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+#faq .heading{
+    color: #7d7d7d;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#faq p{
+    -webkit-font-smoothing: antialiased;/* Ð›Ñ‘Ð³ÐºÐ¸Ð¹ ÐºÑ€Ð°ÑÐ¸Ð²Ñ‹Ð¹ ÑˆÑ€Ð¸Ñ„Ñ‚ */
+    font-family: Arimo, Helvetica, sans-serif;
+    color: #4a4a4a;
+    font-size: 0.95em;
+    margin-bottom: 40px;
+}
+.f_bottom {text-align: center;/* padding:25px 0px; *//* color:#FFF; *//* font-size:13px; *//* background:#232323; */padding: 25px 0px;color: #FFF;font-size: 13px;/* background: #232323; */background: #0e0e0e;border-top: 1px solid #1e1e1e;border-bottom: 1px solid #1e1e1e;box-shadow: 0 0 3px rgba(0, 0, 0, 0.7) inset;/* -webkit-box-shadow: 0 0 3px rgba(0,0,0,.7) inset; */-moz-box-shadow: 0 0 3px rgba(0,0,0,.7) inset;}
