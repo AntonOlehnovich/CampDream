@@ -434,18 +434,34 @@ header.fixed #logo {
 }
 input[type="submit"]
 {
-    border: none;
-    padding: 7px 35px;
-    cursor: pointer;
-    outline: none;
-    background: #45f3ff;
-    color: #000;
-    font-size: 18px;
-    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 10px 0;
+    color: #03e9f4;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    background: #050801;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);/* !!! */
 }
-input:hover[type="submit"]
+
+input[type="submit"]:hover
 {
-    background: magenta;
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+}
+
+input[type="submit"]:nth-child(1)
+{
+    filter: hue-rotate(110deg);
 }
 
 #faq{

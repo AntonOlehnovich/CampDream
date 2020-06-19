@@ -4,7 +4,7 @@ session_start();
 <h4 style="color: cyan">Здравствуйте, <?=$_SESSION['user']?>. Нажмите <a
             href="exit.php">здесь</a>, если вы хотите выйти из аккаунта!</h4><br>
 <?php
-$connect = new PDO('mysql:host=localhost:8889;dbname=myforum', 'root', 'root');
+$connect = new PDO('mysql:host=localhost:8889;dbname=myforum', 'root', 'root', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8mb4'"));
 if (isset($_POST['comment'])){
      $name = filter_var(trim($_SESSION['user']),
          FILTER_SANITIZE_STRING);
@@ -38,7 +38,7 @@ if (isset($_POST['comment'])){
         background-attachment: fixed;
         background-image: url("https://avatars.mds.yandex.net/get-pdb/28866/8fbd37a4-73d3-4c09-80ee-8e4241495894/s1200");
         background-blend-mode: multiply;
-        background-color: indigo;
+        background-color: #1e1e1e;
         background-size: cover;
         margin: 30px;
         font-family: Arial, sans-serif;
@@ -119,7 +119,13 @@ if (isset($_POST['comment'])){
     <textarea name="comment" cols="30" rows="5" placeholder="Ваш комментарий..." required></textarea>
     <input type="submit" value="Отправить" class="btn btn-success">
 </form>
-<hr>
+<hr style="margin: 20px 0;
+	padding: 0;
+	height: 2px;
+	border: none;
+	background: linear-gradient(to right, transparent 50%, #fff 50%),
+				linear-gradient(to right, blue, red);
+	background-size: 16px 2px, 100% 2px;">
 <h2>Форум</h2>
 <?php
    $comments = $connect->query("SELECT * FROM comments ORDER BY data desc ");
